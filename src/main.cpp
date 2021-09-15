@@ -22,7 +22,7 @@ int main()
 	sf::Texture texture;
 	sf::Sprite sprite;
 	sf::Font font; 
-    font.loadFromFile("../assets/poppins.ttf");
+    font.loadFromFile("assets/poppins.ttf");
 	sf::Text text;
 	text.setFont(font);
 	text.setCharacterSize(24);
