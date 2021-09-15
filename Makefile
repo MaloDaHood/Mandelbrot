@@ -2,7 +2,7 @@ SRC_DIR := src
 BUILD_DIR := build
 BIN_DIR := bin
 
-EXE := $(BIN_DIR)/tic_tac_toe
+EXE := $(BIN_DIR)/mandelbrot
 SRC := $(wildcard $(SRC_DIR)/*.cpp)
 OBJ := $(SRC:$(SRC_DIR)/%.cpp=$(BUILD_DIR)/%.o)
 
@@ -11,7 +11,7 @@ CXXFLAGS = -std=c++2a -Wall -Wextra -pedantic
 SFMLFLAGS = -lsfml-graphics -lsfml-window -lsfml-system
 
 all : $(EXE)
-.PHONY : all clean
+.PHONY : all clean run
 
 $(EXE) : $(OBJ) | $(BIN_DIR)
 	$(CXX) $^ -o $@ $(SFMLFLAGS)
