@@ -3,11 +3,6 @@
 constexpr int SCREEN_WIDTH = 1920;
 constexpr int SCREEN_HEIGHT = 1080;
 
-int max_iter {128};
-double zoom {1.0};
-double min_re {-2.5}, max_re {1};
-double min_im {-1}, max_im {1};
-
 sf::Color linear_interpolation(const sf::Color& v, const sf::Color& u, double a)
 {
 	double const b {1-a};
@@ -27,6 +22,11 @@ int main()
 	text.setFont(font);
 	text.setCharacterSize(24);
 	text.setFillColor(sf::Color::White);
+
+	int max_iter {128};
+	double zoom {1.0};
+	double min_re {-2.5}, max_re {1};
+	double min_im {-1}, max_im {1};
 
 	while(window.isOpen())
 	{
