@@ -10,13 +10,13 @@ double min_im {-1}, max_im {1};
 
 sf::Color linear_interpolation(const sf::Color& v, const sf::Color& u, double a)
 {
-	auto const b {1-a};
+	double const b {1-a};
 	return sf::Color(b*v.r + a * u.r, b*v.g + a * u.g, b*v.b + a * u.b);
 }
 
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "Mandelbrot");
+	sf::RenderWindow window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT, 32), "Mandelbrot");
 	sf::Image image; 
     image.create(SCREEN_WIDTH, SCREEN_HEIGHT);
 	sf::Texture texture;
@@ -134,14 +134,14 @@ int main()
 				{0,255,247}
 			};
 
-			static const auto max_color {colors.size()-1};
+			static const unsigned long max_color {colors.size()-1};
 			if(iter==max_iter)
                 iter=0;
 			double mu {1.0*iter/max_iter};
 			mu*=max_color;
-			auto i_mu {static_cast<size_t>(mu)};
-			auto color1 {colors[i_mu]};
-			auto color2 {colors[std::min(i_mu+1, max_color)]};
+			size_t i_mu {static_cast<size_t>(mu)};
+			sf::Color color1 {colors[i_mu]};
+			sf::Color color2 {colors[std::min(i_mu+1, max_color)]};
 			sf::Color c {linear_interpolation(color1, color2, mu-i_mu)};
 
 			image.setPixel(x, y, sf::Color(c));
