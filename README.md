@@ -6,9 +6,9 @@ Mandelbrot's fractal visualizer using SFML library.
 
 **Prerequisites :**
 
-- g++
-- SFML
-- make (optional)
+- <a href="https://gcc.gnu.org/">G++</a>
+- <a href="https://www.sfml-dev.org/index.php">SFML</a>
+- <a href="https://www.gnu.org/software/make/">make</a> (optional)
 
 ***
 
