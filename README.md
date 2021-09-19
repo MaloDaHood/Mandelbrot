@@ -1,6 +1,6 @@
 # Mandelbrot
 
-<a href="https://en.wikipedia.org/wiki/Mandelbrot_set", style="text-align:center;">Mandelbrot set</a> visualizer using SFML library.
+<a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot set</a> visualizer using SFML library.
 <br />
 <br />
 <img src="Mandelbrot_sequence.gif">
