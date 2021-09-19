@@ -1,6 +1,6 @@
 # Mandelbrot
 
-Mandelbrot's fractal visualizer using SFML library.
+<a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot set</a> visualizer using SFML library.
 
 ***
 
