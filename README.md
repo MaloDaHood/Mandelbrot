@@ -2,7 +2,7 @@
 
 <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot set</a> visualizer using SFML library.
 <br />
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mandelbrot_sequence_new.gif">
+<img src="Mandelbrot_sequence.gif">
 
 ***
 
