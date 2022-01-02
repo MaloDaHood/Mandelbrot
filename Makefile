@@ -7,7 +7,7 @@ SRC := $(wildcard $(SRC_DIR)/*.cpp)
 OBJ := $(SRC:$(SRC_DIR)/%.cpp=$(BUILD_DIR)/%.o)
 
 CXX = g++
-CXXFLAGS = -std=c++2a -Wall -Wextra -pedantic
+CXXFLAGS = -o3 -std=c++2a
 SFMLFLAGS = -lsfml-graphics -lsfml-window -lsfml-system
 
 all : $(EXE)

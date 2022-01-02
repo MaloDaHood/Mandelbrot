@@ -1,30 +1,32 @@
 # Mandelbrot
 
-<a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot set</a> visualizer using SFML library.
-<br />
-<br />
-<img src="Mandelbrot_sequence.gif">
+[Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set) visualizer using SFML library.
+
+![Wikipedia](Mandelbrot_sequence.gif)
 
 ***
 
-**Prerequisites :**
+## Prerequisites
 
-- <a href="https://gcc.gnu.org/">G++</a>
-- <a href="https://www.sfml-dev.org/index.php">SFML</a>
-- <a href="https://www.gnu.org/software/make/">make</a> (optional)
+- [G++](https://gcc.gnu.org/)
+- [SFML](https://www.sfml-dev.org/index.php)
+- [Make](https://www.gnu.org/software/make/) (optional)
 
 ***
 
-**Compile and Run :**
+## Compile and Run
 
-``$ make run`` <br />
-or <br />
-``$ g++ src/main.cpp -std=c++2a -lsfml-graphics -lsfml-window -lsfml-system -o mandelbrot`` <br />
+``$ make run``
+
+or
+
+``$ g++ src/main.cpp -o3 -std=c++2a -lsfml-graphics -lsfml-window -lsfml-system -o mandelbrot``
+
 ``$ ./mandelbrot``
 
 ***
 
-**Usage :**
+## Usage
 
 - Left click : Zoom in
 - Right click : Zoom out
